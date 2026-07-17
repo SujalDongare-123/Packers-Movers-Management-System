@@ -6,43 +6,99 @@ A comprehensive **Spring Boot REST API** for managing packers and movers service
 
 ## 📸 Screenshots
 
-### API Endpoints
-```
-POST   /api/users/register          - Register a new user
-POST   /api/users/login             - User login
-GET    /api/users                   - Get all users
-GET    /api/users/{id}              - Get user by ID
-PUT    /api/users/{id}              - Update user details
-DELETE /api/users/{id}              - Delete user
+### 1. Database Tables (MySQL)
+All tables with sample data showing the complete database structure:
 
-GET    /api/services                - Get all moving services
-POST   /api/services                - Create new service
-GET    /api/services/{id}           - Get service by ID
-PUT    /api/services/{id}           - Update service
-DELETE /api/services/{id}           - Delete service
+![MySQL Database Tables](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/db_tables.png)
 
-POST   /api/quotations              - Request quotation
-GET    /api/quotations              - Get all quotations
-GET    /api/quotations/{id}         - Get quotation by ID
-PUT    /api/quotations/{id}         - Update quotation status
+**Tables visible:**
+- **users** - User registration and profile data
+- **services** - Moving services available
+- **vehicles** - Fleet management data
+- **quotations** - Customer quotation requests
+- **payments** - Payment transactions
+- **feedback** - Customer feedback and ratings
 
-POST   /api/payments                - Process payment
-GET    /api/payments                - Get all payments
-GET    /api/payments/{id}           - Get payment by ID
+### 2. Swagger UI - User & Service Controllers
+Complete API endpoints for User and Moving Service management:
 
-POST   /api/vehicles               - Add vehicle
-GET    /api/vehicles               - Get all vehicles
-PUT    /api/vehicles/{id}          - Update vehicle
+![Swagger User & Service APIs](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_user_service.png)
 
-POST   /api/feedback               - Submit feedback
-GET    /api/feedback               - Get all feedback
-```
+**Available Endpoints:**
+- `POST /api/users/register` - User registration
+- `POST /api/users/login` - User login
+- `GET /api/users` - Get all users
+- `GET /api/users/{id}` - Get user by ID
+- `PUT /api/users/{id}` - Update user
+- `DELETE /api/users/{id}` - Delete user
+- `GET /api/services` - Get all services
+- `POST /api/services` - Create service
+- `GET /api/services/{id}` - Get service by ID
+- `PUT /api/services/{id}` - Update service
+- `DELETE /api/services/{id}` - Delete service
 
-### Swagger UI
-Access the interactive API documentation at:
+### 3. Swagger UI - Quotation & Payment Controllers
+API endpoints for quotations and payment processing:
+
+![Swagger Quotation & Payment APIs](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_quotation_payment.png)
+
+**Available Endpoints:**
+- `GET /api/quotations/{id}` - Get quotation by ID
+- `PUT /api/quotations/{id}` - Update quotation
+- `DELETE /api/quotations/{id}` - Delete quotation
+- `GET /api/quotations` - Get all quotations
+- `POST /api/quotations` - Create quotation
+- `GET /api/quotations/status` - Get quotations by status
+- `GET /api/payments/{id}` - Get payment by ID
+- `PUT /api/payments/{id}` - Update payment
+- `DELETE /api/payments/{id}` - Delete payment
+- `GET /api/payments` - Get all payments
+- `POST /api/payments` - Process payment
+
+### 4. Swagger UI - Vehicle & Feedback Controllers
+API endpoints for vehicle management and feedback:
+
+![Swagger Vehicle & Feedback APIs](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_vehicle_feedback.png)
+
+**Available Endpoints:**
+- `GET /api/vehicles/{id}` - Get vehicle by ID
+- `PUT /api/vehicles/{id}` - Update vehicle
+- `DELETE /api/vehicles/{id}` - Delete vehicle
+- `GET /api/vehicles` - Get all vehicles
+- `POST /api/vehicles` - Add new vehicle
+- `GET /api/vehicles/status` - Filter vehicles by status
+- `GET /api/feedback/{id}` - Get feedback by ID
+- `PUT /api/feedback/{id}` - Update feedback
+- `DELETE /api/feedback/{id}` - Delete feedback
+- `GET /api/feedback` - Get all feedback
+- `POST /api/feedback` - Submit feedback
+- `GET /api/feedback/rating` - Get feedback by rating
+
+### 5. Swagger UI - API Schemas
+Data models and schemas for all entities:
+
+![Swagger Entity Schemas](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_schemas.png)
+
+**Entities Documented:**
+- **User** - id, firstName, lastName, email, password, mobile, dob, nationality, address, city, state, country, role
+- **MovingService** - serviceId, serviceName, description, image, status, price
+- **Quotation** - quotationId, user, movingService, fromAddress, toAddress, shiftingDate, reference, serviceDetails, status
+- **Payment** - paymentId, user, quotation, amount, paymentMethod, paymentStatus, paymentDate, transactionId
+- **Vehicle** - vehicleId, vehicleName, vehicleNumber, vehicleType, capacity, driverName, driverMobile, status
+- **Feedback** - feedbackId, user, movingService, comments, rating, status
+
+### 6. Swagger UI - Complete Schemas
+Detailed schema definitions showing field types and constraints:
+
+![Swagger Complete Schemas](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_complete_schemas.png)
+
+### Swagger UI Access
+Interactive API documentation available at:
 ```
 http://localhost:8080/swagger-ui.html
 ```
+
+**Try it out:** Use the Swagger UI to test all endpoints directly from your browser!
 
 ---
 
