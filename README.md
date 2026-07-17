@@ -2,6 +2,71 @@
 
 A comprehensive **Spring Boot REST API** for managing packers and movers services, including user management, service quotations, vehicle management, and payment processing.
 
+
+## 📌 Project Overview
+
+The Packers & Movers Management System is a backend application developed using Spring Boot. It provides RESTful APIs for managing users, moving services, quotations, vehicles, payments, and customer feedback.
+
+This project follows a layered architecture using Controller, Service, Repository, and Entity layers. APIs are tested using Postman and documented with Swagger UI.
+
+---
+
+## ✨ Features
+
+- User Registration & Login
+- User Management (CRUD)
+- Moving Service Management
+- Vehicle Management
+- Quotation Management
+- Payment Management
+- Customer Feedback Management
+- Swagger API Documentation
+- MySQL Database Integration
+- RESTful API Design
+- Layered Architecture
+
+---
+
+## 📂 Modules
+
+- 👤 User Module
+- 🚛 Moving Service Module
+- 📋 Quotation Module
+- 🚚 Vehicle Module
+- 💳 Payment Module
+- ⭐ Feedback Module
+
+---
+
+## 📊 Total APIs
+
+| Module | APIs |
+|---------|------|
+| User | 6 |
+| Moving Service | 6 |
+| Quotation | 6 |
+| Vehicle | 6 |
+| Payment | 6 |
+| Feedback | 6 |
+
+**Total APIs : 36**
+
+---
+
+## 📖 Swagger
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+---
+
+## 🧪 API Testing
+
+All APIs have been tested using:
+
+- Swagger UI
+- Postman
 ---
 
 ## 📸 Screenshots
