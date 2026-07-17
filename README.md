@@ -669,7 +669,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Sujal Dongare**
 - GitHub: [@SujalDongare-123](https://github.com/SujalDongare-123)
-- Email: sujaldongarе@example.com
+- Email: dongaresujal123@gmail.com
 
 ---
 
