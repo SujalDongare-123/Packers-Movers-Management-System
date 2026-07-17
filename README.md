@@ -9,7 +9,7 @@ A comprehensive **Spring Boot REST API** for managing packers and movers service
 ### 1. Database Tables (MySQL)
 All tables with sample data showing the complete database structure:
 
-![MySQL Database Tables](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/db_tables.png)
+![MySQL Database Tables](./screenshots/01_db_tables.png)
 
 **Tables visible:**
 - **users** - User registration and profile data
@@ -22,7 +22,7 @@ All tables with sample data showing the complete database structure:
 ### 2. Swagger UI - User & Service Controllers
 Complete API endpoints for User and Moving Service management:
 
-![Swagger User & Service APIs](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_user_service.png)
+![Swagger User & Service APIs](./screenshots/02_swagger_user_service.png)
 
 **Available Endpoints:**
 - `POST /api/users/register` - User registration
@@ -40,7 +40,7 @@ Complete API endpoints for User and Moving Service management:
 ### 3. Swagger UI - Quotation & Payment Controllers
 API endpoints for quotations and payment processing:
 
-![Swagger Quotation & Payment APIs](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_quotation_payment.png)
+![Swagger Quotation & Payment APIs](./screenshots/03_swagger_quotation_payment.png)
 
 **Available Endpoints:**
 - `GET /api/quotations/{id}` - Get quotation by ID
@@ -58,7 +58,7 @@ API endpoints for quotations and payment processing:
 ### 4. Swagger UI - Vehicle & Feedback Controllers
 API endpoints for vehicle management and feedback:
 
-![Swagger Vehicle & Feedback APIs](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_vehicle_feedback.png)
+![Swagger Vehicle & Feedback APIs](./screenshots/04_swagger_vehicle_apis.png)
 
 **Available Endpoints:**
 - `GET /api/vehicles/{id}` - Get vehicle by ID
@@ -77,7 +77,7 @@ API endpoints for vehicle management and feedback:
 ### 5. Swagger UI - API Schemas
 Data models and schemas for all entities:
 
-![Swagger Entity Schemas](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_schemas.png)
+![Swagger Entity Schemas](./screenshots/05_swagger_entity_schemas.png)
 
 **Entities Documented:**
 - **User** - id, firstName, lastName, email, password, mobile, dob, nationality, address, city, state, country, role
@@ -90,7 +90,7 @@ Data models and schemas for all entities:
 ### 6. Swagger UI - Complete Schemas
 Detailed schema definitions showing field types and constraints:
 
-![Swagger Complete Schemas](https://github.com/SujalDongare-123/Packers-Movers-Management-System/raw/main/screenshots/swagger_complete_schemas.png)
+![Swagger Complete Schemas](./screenshots/06_swagger_complete_schemas.png)
 
 ### Swagger UI Access
 Interactive API documentation available at:
